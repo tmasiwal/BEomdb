@@ -23,14 +23,14 @@ function App() {
   };
 
   const handleAddToFavorites = (Title,Year,Poster,Type) => {
-    axios.post(`https://dfadfad.onrender.com/movies/add`,{
-      userName:userName,
-      "movie":{
-title:Title,
-year:Year,
-image:Poster,
-type:Type
-      }
+    axios.post(`https://dfadfad.onrender.com/movies/add`, {
+      userName: userName,
+      movie: {
+        title: Title,
+        year: Year,
+        image: Poster,
+        type: Type,
+      },
     });
   };
   const navigaet=useNavigate()
