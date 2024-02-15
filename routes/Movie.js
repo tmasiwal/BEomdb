@@ -26,7 +26,7 @@ router.get("/data", async (req, res) => {
 
 router.post("/add", async (req, res) => {
   const { userName, movie } = req.body;
-console.log(userName,movie)
+
   try {
     // Find user's movies
     let userMovies = await Movie.findOne({ userName });
