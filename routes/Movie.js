@@ -7,7 +7,7 @@ const router = express.Router();
 
 // Route to get all movies for a specific user
 router.get("/data", async (req, res) => {
-  const { userName } = req.body;
+  const { userName } = req.query;
 
   try {
     // Find movies for the specified user
