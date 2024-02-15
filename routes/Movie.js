@@ -14,7 +14,7 @@ router.get("/data", async (req, res) => {
     const userMovies = await Movie.findOne({ userName });
 
     if (!userMovies) {
-      return res.status(404).json({ message: "No movies found for this user" });
+      return res.json({ message: "No movies found for this user" });
     }
 
     res.json(userMovies.movies);
